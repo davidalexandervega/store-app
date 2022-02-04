@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'baskerville';
+    src: url('./fonts/baskervville-regular/webfonts/Baskervville-Regular.woff2') format('woff2');
+}
+
+html {
+    overflow-y: overlay;
+}
+
+body {
+    height: 100%;
+    width: auto;
+    font-family: 'baskerville';
+    background-color: whitesmoke;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+#navContainer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+#navHeader {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: default;
+}
+
+#navButtons {
+    margin-right: 20px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navButton {
+    min-width: 70px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 87vh;
+    background-image: url('./homeBackground.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    user-select: none;
+}
+
+#homeTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 40px;
+    width: 33vw;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    font-size: 16px;
+    cursor: default;
+}
+
+#homeContent {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: -75px;
+    font-size: 15vw;
+}
+
+.homeItem:hover {
+    cursor: default;
+    color: whitesmoke;
+}
+
+#homeFooter {
+    margin: auto;
+    margin-top: 10px;
+    width: 400px;
+    text-align: center;
+    cursor: default;
+}
+
+#store {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 262px;
+    width: 200px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.cardName, .cardDesc {
+    text-indent: 4px;
+}
+
+.cardImg {
+    height: 200px;
+    width: 200px;
+    outline: 1px solid black;
+}
+
+.cardImg img {
+    height: 100%;
+    width: 100%;
+}
+
+.cardButton {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+    user-select: none;
+}
+
+.cardButton:hover {
+    color: hotpink;
+}
+
+#cart {
+    display: flex;
+    flex-direction: row;
+}
+
+.cartItem {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 55px;
+    height: 150px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.cartImg {
+    height: 100%;
+}
+
+.cartImg img {
+    height: 100%;
+    width: 100%;
+    outline: 1px solid black;
+}
+
+.cartDetails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cartQuantity {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.cartNumber {
+    font-size: 20px;
+}
+
+.cartUp, .cartDown, .cartDownNull, .cartNumber {
+    min-width: 15px;
+    text-align: center;
+    user-select: none;
+}
+
+.cartUp:hover, .cartDown:hover, .cartRemove:hover, #checkout:hover {
+    cursor: pointer;
+    color: hotpink;
+}
+
+.cartRemove {
+    font-size: 20px;
+    user-select: none;
+}
+
+#cartSummary {
+    position: fixed;
+    margin-left: 750px;
+    margin-top: 75px;
+}
+
+#cartDescription {
+    font-size: 60px;
+}
+
+#emptyCart {
+    margin: auto;
+    margin-top: 75px;
+    width: 1000px;
+    text-align: center;
+}
+
+#checkout {
+    margin-top: 20px;
+    width: 175px;
+    font-size: 40px;
+    user-select: none;
+}

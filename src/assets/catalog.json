@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "name": "aiwa cd player",
+        "description": "bubblegum pink",
+        "price": 90,
+        "img": "../assets/images/id001.png"
+    },
+    {
+        "id": 1,
+        "name": "aiwa cd player",
+        "description": "electric orange",
+        "price": 90,
+        "img": "../assets/images/id002.png"
+    },
+    {
+        "id": 2,
+        "name": "aiwa cd player",
+        "description": "kiwi green",
+        "price": 90,
+        "img": "../assets/images/id003.png"
+    },
+    {
+        "id": 3,
+        "name": "spectra cassette player",
+        "description": "swirl dream",
+        "price": 120,
+        "img": "../assets/images/id004.png"
+    },
+    {
+        "id": 4,
+        "name": "street cassette player",
+        "description": "neon red",
+        "price": 120,
+        "img": "../assets/images/id005.png"
+    },
+    {
+        "id": 5,
+        "name": "crown cassette player",
+        "description": "scanner pink",
+        "price": 120,
+        "img": "../assets/images/id006.png"
+    }
+]
