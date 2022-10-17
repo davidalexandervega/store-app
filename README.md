@@ -59,5 +59,3 @@ npm run start
 ```
 
 The application will be accessible via localhost at $PORT.
-
-#################################################################################
