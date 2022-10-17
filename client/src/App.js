@@ -13,7 +13,7 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   const fetchCatalog = async () => {
-    const response = await axios.get('http://localhost:5000/api/items');
+    const response = await axios.get('http://localhost:4000/api/items');
     setCatalog(response.data);
   };
 
@@ -50,10 +50,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Origin />} />
         <Route path="/store" element={<Store catalog={catalog} add={addToCart} />} />
-        <Route
-          path="/cart"
-          element={<Cart catalog={catalog} cart={cart} setCart={setCart} />}
-        />
+        <Route path="/cart" element={<Cart catalog={catalog} cart={cart} setCart={setCart} />} />
       </Routes>
     </BrowserRouter>
   );
