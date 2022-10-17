@@ -3,9 +3,9 @@
   "description": "",
   "version": "1.0.0",
   "scripts": {
-    "start": "cd backend && node app",
-    "heroku-postbuild": "cd backend && npm install && cd ../frontend && npm install && npm run build",
-    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" "
+    "start": "cd api && node app",
+    "heroku-postbuild": "cd api && npm install && cd ../client && npm install && npm run build",
+    "dev": "concurrently \"cd api && npm run dev\" \"cd client && npm start\" "
   },
   "repository": {
     "type": "git",

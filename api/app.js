@@ -9,14 +9,14 @@ const asyncHandler = require('express-async-handler');
 const connectDB = require('./config/db');
 connectDB();
 
-const Item = require('./ItemModel');
+const Item = require('./models/ItemModel');
 
 // utilizing cors to make requests across different ports locally:
 const cors = require('cors');
 app.use(
   cors({
     origin: ['http://localhost:3000'],
-  }),
+  })
 );
 
 // middleware to parse json:
@@ -34,10 +34,10 @@ app.get('/api/items', getItems);
 
 // serve frontend:
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/build')));
+  app.use(express.static(path.join(__dirname, '../client/build')));
 
   app.get('*', (req, res) =>
-    res.sendFile(path.resolve(__dirname, '../', 'frontend', 'build', 'index.html')),
+    res.sendFile(path.resolve(__dirname, '../', 'client', 'build', 'index.html'))
   );
 }
 
